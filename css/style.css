@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}
+
+body {
+    background: #333;
+}
+
+h1,
+h2,
+h3,
+.blinker {
+    color: #80ff00;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+nav {
+    margin: 60px auto 30px auto;
+}
+li {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+nav ul li:hover {
+    opacity: .5;
+}
+
+.mainContent {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+ul.socials li{
+    margin: 20px auto;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a:hover{
+    opacity: .5;
+}
+
+.hidden {
+    display: none;
+}
+
+.blinker {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }    
+    50% {
+    color: #80ff00;
+    }
+}
+
+.wb-body {
+    background: #000;
+    padding: 50px;
+}
+
+.wb-title {
+    font-family: 'Roboto Mono';
+    color: #000;
+    font-weight: 700;
+}
+
+p.contactDetails {
+    margin-top: 20px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .wb-body {
+    padding: 20px;
+ }
+}
